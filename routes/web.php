@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\LogRequests;
 use App\Http\Middleware\CheckAge;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 
 // Group routes that use the 'web' middleware and log requests
 Route::middleware(['web', LogRequests::class])->group(function () {
@@ -64,3 +66,12 @@ Route::middleware(['web', LogRequests::class])->group(function () {
     });
 
 });
+
+// Home page route with dynamic username
+Route::get('/homepage/{username}', [HomeController::class, 'index'])->name('homepage');
+
+// Dashboard routes with dynamic username
+Route::get('/dashboard/{username}', [DashboardController::class, 'index'])->name('dashboard');
+
+// Feed route for the dashboard
+Route::get('/feed/{username}', [DashboardController::class, 'feed'])->name('feed');
