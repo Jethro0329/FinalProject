@@ -7,96 +7,53 @@
         <section class="hero">
             <div class="home-bg-blur"></div>
             <div class="home-content">
-                <h1>Welcome to Robiel Prince Café {{ $username }}!</h1>
+                <h1>Welcome to Bake & Brew, {{ $username }}!</h1>
                 <h2>Where every bite is a <span>little joy.</span></h2>
                 <p>Savor light meals, delightful snacks, and a cozy atmosphere crafted just for you.</p>
             </div>
         </section>
 
+        <div class="welcome-section">
+        <h2>Welcome</h2>
+        <p>Great coffee, mouth-watering food, excellent service, and a smile. It's all we’ve ever focused on. Now, with our Catering Services, you can bring us with you for the comfort of your own home. Join us on this flavorful journey, and let’s do it together!</p>
+        <div class="arrow-container">
+            <a href="#home-heading" class="arrow-down">&#8595;</a> 
+            <a href="#home-heading" class="arrow-down">&#8595;</a>
+            <a href="#home-heading" class="arrow-down">&#8595;</a>
+        </div>
+        </div>
+
         <section class="home-heading">
-            <div class="heading">Our <span>Features</span></div> 
+    <div class="heading">Our <span>Features</span></div>
 
-            <div class="feature">
-                <div class="feature-box">
-                    <img src="{{ asset('css/bfast.jpg') }}" alt="">
-                    <h3>Morning Delights & Snack Staples</h3>
-                    <p>
-                        Start your day with our comforting breakfast classics or enjoy a quick, energizing snack. 
-                        At Robiel Prince Cafe, we offer a delicious selection that balances taste and quality, perfect for any craving. 
-                        Dive into our menu and discover your new favorite bite!
-                    </p>
-                </div>
-
-                <div class="feature-box">
-                    <img src="{{ asset('css/lunch.jpg') }}" alt="">
-                    <h3>Delicious Meals & Free Soup</h3>
-                    <p>
-                        Enjoy our fresh, flavorful lunch and dinner options, paired with a complimentary Soup of the Day. 
-                        Whether you're after a quick bite or a relaxed meal, 
-                        we’ve got something to satisfy every craving.
-                    </p>
-                </div>
-
-                <div class="feature-box">
-                    <img src="{{ asset('css/drinks.jpg') }}" alt="">
-                    <h3>Refreshing Drinks & Beverages</h3>
-                    <p>
-                        From energizing coffees to refreshing smoothies and indulgent shakes, our 
-                        drink menu offers something for every taste. Whether you need a pick-me-up or 
-                        the perfect pairing for your meal, we've got you covered!
-                    </p>
-                </div>
+    <div class="menu-cards">
+        <div class="menu-card">
+            <div class="card-image">
+                <img src="{{ asset('css/img13.jpg') }}" alt="Morning Delights & Snack Staples">
             </div>
-        </section>
+            <h3>Morning Delights & Snack Staples</h3>
+            <p>Start your day with our comforting breakfast classics or enjoy a quick, energizing snack. At Robiel Prince Cafe, we offer a delicious selection that balances taste and quality, perfect for any craving. Dive into our menu and discover your new favorite bite!</p>
+            <a href="#">See Menu</a>
+        </div>
 
-        <section class="best-seller">
-            <div class="heading">Our <span>Best Seller</span></div> 
-            <div class="seller-box"> 
-                <div class="bfast">Trending <span><i class="fa-solid fa-fire"></i></span></div>
-                <div class="first-section"> 
-
-                    <div class="firstsection-box"> 
-                        <img src="{{ asset('css/img1.jpg') }}" alt="">
-                        <h3>Egg Sandwinch</h3>
-                        <div class="price">$1.2</div>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <a href="#" class="check-btn">Buy</a>
-                    </div>
-
-                    <div class="firstsection-box"> 
-                        <img src="{{ asset('css/img2.jpg') }}" alt="">
-                        <h3>Tapsilog</h3>
-                        <div class="price">$1.2</div>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <a href="#" class="check-btn">Buy</a>
-                    </div>
-
-                    <div class="firstsection-box"> 
-                        <img src="{{ asset('css/img3.jpg') }}" alt="">
-                        <h3>Pancit Bihon</h3>
-                        <div class="price">$1.2</div>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <a href="#" class="check-btn">Buy</a>
-                    </div> 
-                </div>
+        <div class="menu-card">
+            <div class="card-image">
+                <img src="{{ asset('css/img12.jpg') }}" alt="Delicious Tea">
             </div>
-        </section>
+            <h3>Delicious Tea</h3>
+            <p>Enjoy our fresh, flavorful tea options. Whether you're after a quick refreshment or a relaxed moment, we’ve got something to satisfy every craving. the heheheheheehhe. yayayayayyaya. ahahahahahaha. gegegeggeegeg. </p>
+            <a href="#">See Menu</a>
+        </div>
+
+        <div class="menu-card">
+            <div class="card-image">
+                <img src="{{ asset('css/img11.jpg') }}" alt="Refreshing Drinks & Beverages">
+            </div>
+            <h3>Refreshing Drinks & Beverages</h3>
+            <p>From energizing coffees to refreshing smoothies and indulgent shakes, our drink menu offers something for every taste. Whether you need a pick-me-up or the perfect pairing for your meal, we've got you covered!</p>
+            <a href="#">See Menu</a>
+        </div>
+    </div>
+</section>
+
 @endsection

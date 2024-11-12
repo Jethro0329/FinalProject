@@ -4,7 +4,7 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website - @yield('title')</title>
+    <title> Bake & Brew Co. - @yield('title')</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -12,7 +12,7 @@
 <body>
     @if(!isset($hideNavAndFooter) || !$hideNavAndFooter)
         <header class="site-header">
-            <a href="#" class="logo"> <i class="fa-solid fa-mug-hot"></i> Robiel Prince Café</a>
+            <a href="#" class="logo"> <i class="fa-solid fa-mug-hot"></i>Bake & Brew Co.</a>
             <nav class="nav">
                 <a href="{{ route('homepage', ['username' => $username]) }}" class="{{ request()->is('homepage/*') ? 'active' : '' }}">Home</a>
                 <a href="{{ route('menu', ['username' => $username]) }}" class="{{ request()->is('menu/*') ? 'active' : '' }}">Menu</a>
@@ -51,16 +51,24 @@
 
     <!-- Add your footer here if needed -->
     @if(!isset($hideNavAndFooter) || !$hideNavAndFooter)
-        <footer class="site-footer">
-            <b>
-                <p>&copy; 2024 Robiel Prince Café. All Rights Reserved.</p>
-                <ul class="social-links">
-                    <li><a href="https://www.facebook.com/princelouis.jaylo.1">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/genkeiyoshi/">Instagram</a></li>
-                    <li><a href="https://x.com/LouisJaylo">Twitter</a></li>
-                </ul>
-            </b>
-        </footer>
+    <footer>
+        <section class="footer">
+                <div class="footer__column">
+                    <h1 class="footer__title">Bake & Brew Co. © </h1>
+                    <p class="footer__contact-info">
+                        <span><a href="bakedandbrew@gmail.com" class="footer__link"><i
+                                    class="fas fa-envelope"></i></a></span>
+                        <span>bakedandbrew@gmail.com</span><br>
+                        <span><a href="tel:09076409605" class="footer__link"><i class="fas fa-phone"></i></a></span>
+                        <span>09123456789</span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 All rights reserved.</p>
+            </div>
+        </section>
+    </footer>
     @endif
 
     <script src="{{ asset('javascript/script.js') }}"></script>
