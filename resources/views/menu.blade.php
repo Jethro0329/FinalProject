@@ -7,13 +7,13 @@
     <main class="content-main">
         <section class="menu">
             <div class="menu-box"> 
-                <div class="bfast">Breakfast</div>
+                <div class="bfast">All Day Breakfast</div>
                     <div class="menu-a"> 
 
                         <div class="a-box"> 
                             <img src="{{ asset('css/img1.jpg') }}" alt="">
-                            <h3>Egg Sandwinch</h3>
-                            <div class="price">$1.2</div>
+                            <h3>Roasted Garlic Alfredo </h3>
+                            <div class="price"> ₱200</div>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -26,8 +26,8 @@
 
                         <div class="a-box"> 
                             <img src="{{ asset('css/img2.jpg') }}" alt="">
-                            <h3>Tapsilog</h3>
-                            <div class="price">$1.2</div>
+                            <h3>Red Velvet Cheesecake</h3>
+                            <div class="price">₱180</div>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
