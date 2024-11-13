@@ -37,6 +37,7 @@
 
             <!-- Login button -->
             <button type="submit">Login</button>
+            <div class="image-container"></div>
         </form>
     </div>
 </main>
