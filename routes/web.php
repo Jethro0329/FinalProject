@@ -74,5 +74,3 @@ Route::get('/homepage/{username}', [HomeController::class, 'index'])->name('home
 // Dashboard routes with dynamic username
 Route::get('/dashboard/{username}', [DashboardController::class, 'index'])->name('dashboard');
 
-// Feed route for the dashboard
-Route::get('/feed/{username}', [DashboardController::class, 'feed'])->name('feed');

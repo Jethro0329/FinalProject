@@ -8,11 +8,7 @@ class DashboardController extends Controller
 {
     public function index($username)
     {
-        return view('dashboard', ['username' => $username]); // Assuming you have a dashboard view
+        return view('dashboard', ['username' => $username]);
     }
 
-    public function feed($username)
-    {
-        return view('feed', ['username' => $username]); // Assuming you have a feed view
-    }
 }
