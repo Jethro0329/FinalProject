@@ -77,8 +77,13 @@
 
                         <div class="a-box"> 
                             <img src="{{ asset('css/img2.jpg') }}" alt="">
+<<<<<<< HEAD
                             <h3>Red Velvet Cheesecake</h3>
                             <div class="price">₱180</div>
+=======
+                            <h3>Red Velvet Cake</h3>
+                            <div class="price">$1.2</div>
+>>>>>>> dc2c6d5518c2f20576b813dfdf60299a065b5250
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -91,7 +96,7 @@
 
                         <div class="a-box"> 
                             <img src="{{ asset('css/img3.jpg') }}" alt="">
-                            <h3>Pancit Bihon</h3>
+                            <h3>Cheesecake</h3>
                             <div class="price">$1.2</div>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
