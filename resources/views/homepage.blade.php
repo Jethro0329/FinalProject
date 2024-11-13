@@ -15,24 +15,31 @@
 
         <div class="welcome-section">
         <h2>Welcome</h2>
-        <p>Great coffee, mouth-watering food, excellent service, and a smile. It's all we’ve ever focused on. Now, with our Catering Services, you can bring us with you for the comfort of your own home. Join us on this flavorful journey, and let’s do it together!</p>
-        <div class="arrow-container">
+        <p>
+            Great coffee, mouth-watering food, excellent service, and a smile. 
+            It's all we’ve ever focused on. Now, with our Catering Services, you can bring us with you for the comfort of your own home. 
+            Join us on this flavorful journey, and let’s do it together!
+        </p>
+        <!--<div class="arrow-container">
             <a href="#home-heading" class="arrow-down">&#8595;</a> 
             <a href="#home-heading" class="arrow-down">&#8595;</a>
             <a href="#home-heading" class="arrow-down">&#8595;</a>
-        </div>
+        </div>-->
         </div>
 
         <section class="home-heading">
-    <div class="heading">Our <span>Features</span></div>
+    <div class="heading">Signature <span> Offerings</span></div>
 
     <div class="menu-cards">
         <div class="menu-card">
             <div class="card-image">
                 <img src="{{ asset('css/img13.jpg') }}" alt="Morning Delights & Snack Staples">
             </div>
-            <h3>Morning Delights & Snack Staples</h3>
-            <p>Start your day with our comforting breakfast classics or enjoy a quick, energizing snack. At Robiel Prince Cafe, we offer a delicious selection that balances taste and quality, perfect for any craving. Dive into our menu and discover your new favorite bite!</p>
+            <h3>Sunrise Specials</h3>
+            <p> 
+                Whether you're craving a flaky croissant, a buttery scone, or a seasonal tart, our Sunrise Specials offer a perfect blend of classic 
+                and inventive treats to energize your morning. Drop by to indulge in a moment of joy and sweetness as the day begins!
+            </p>
             <a href="#">See Menu</a>
         </div>
 
@@ -40,8 +47,11 @@
             <div class="card-image">
                 <img src="{{ asset('css/img12.jpg') }}" alt="Delicious Tea">
             </div>
-            <h3>Delicious Tea</h3>
-            <p>Enjoy our fresh, flavorful tea options. Whether you're after a quick refreshment or a relaxed moment, we’ve got something to satisfy every craving. the heheheheheehhe. yayayayayyaya. ahahahahahaha. gegegeggeegeg. </p>
+            <h3>Soothing Steeps</h3>
+            <p>
+            A selection of calming teas to help you relax and recharge. From fragrant herbs to classic blends, 
+            each cup offers a moment of tranquility. Sip, unwind, and enjoy the peaceful warmth in every brew.
+            </p>
             <a href="#">See Menu</a>
         </div>
 
@@ -49,8 +59,11 @@
             <div class="card-image">
                 <img src="{{ asset('css/img11.jpg') }}" alt="Refreshing Drinks & Beverages">
             </div>
-            <h3>Refreshing Drinks & Beverages</h3>
-            <p>From energizing coffees to refreshing smoothies and indulgent shakes, our drink menu offers something for every taste. Whether you need a pick-me-up or the perfect pairing for your meal, we've got you covered!</p>
+            <h3>Fresh Brews</h3>
+            <p>
+            This offers a selection of aromatic, expertly brewed coffees and hot drinks to kickstart your day.
+             From rich, bold flavors to smooth, mellow blends, each cup is made to refresh and energize you. Savor the perfect brew with every sip.
+            </p>
             <a href="#">See Menu</a>
         </div>
     </div>

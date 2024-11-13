@@ -5,6 +5,7 @@ use App\Http\Middleware\LogRequests;
 use App\Http\Middleware\CheckAge;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use Illuminate\Support\Facades\Auth;
 
 // Group routes that use the 'web' middleware and log requests
 Route::middleware(['web', LogRequests::class])->group(function () {
