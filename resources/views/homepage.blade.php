@@ -21,19 +21,16 @@
 
         <p>
             Great coffee, mouth-watering food, excellent service, and a smile. 
-            It's all we’ve ever focused on. Now, with our Catering Services, you can bring us with you for the comfort of your own home. 
-            Join us on this flavorful journey, and let’s do it together!
-        </p>
-<<<<<<< HEAD
         
-=======
+        </p>
+
         <div class="arrow-container">
 
             <a href="#home-heading" class="arrow-down">&#8595;</a> 
             <a href="#home-heading" class="arrow-down">&#8595;</a>
             <a href="#home-heading" class="arrow-down">&#8595;</a>
         </div>
->>>>>>> 1d3624a5d69e529fde3fbf0aad7889c7d1ed4340
+
         </div>
 
         <section class="home-heading">
