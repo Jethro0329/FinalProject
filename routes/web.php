@@ -72,5 +72,6 @@ Route::middleware(['web', LogRequests::class])->group(function () {
 Route::get('/homepage/{username}', [HomeController::class, 'index'])->name('homepage');
 
 // Dashboard routes with dynamic username
-Route::get('/dashboard/{username}', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/menu/{username}', [DashboardController::class, 'index'])->name('menu');
+
 

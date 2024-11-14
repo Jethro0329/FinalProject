@@ -8,7 +8,7 @@ class DashboardController extends Controller
 {
     public function index($username)
     {
-        return view('dashboard', ['username' => $username]);
+        return view('menu', ['username' => $username]);
     }
 
 }
