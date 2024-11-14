@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 /* Global Styles */
 * {
   box-sizing: border-box;
@@ -35,34 +37,34 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 9%;
-  background: white;
+  background: #6E7556;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .site-header .logo{
   font-size: 2.5rem;
   font-weight: bolder;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .site-header .logo i{
-  color: #A97E53;
+  color: #ffffff;
   padding-right: 10px;
   padding-top: 5px;
 }
 .site-header .nav a{
   font-size: 1.7rem;
   margin: 0 1rem;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .nav a.active {
   font-weight: bold; /* Example: make active link bold */
-  border-bottom: 1px solid #914F1E;
-  color: #914F1E;
+  border-bottom: 1px solid #CEAF90;
+  color: #CEAF90;
 }
 
 .site-header .nav a:hover{
-  color: #A97E53;
+  color: #b3977b;
 }
 
 .site-header .icons div{
@@ -70,15 +72,15 @@ body {
   width: 4.5rem;
   line-height: 4.5rem;
   border-radius: .5rem;
-  background: #eee;
-  color: black;
+  background: transparent;
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   margin-right: .3rem;
   text-align: center;
   cursor: pointer;
 }
 .site-header .icons div:hover{
-  background: #A97E53;
+  background: #CEAF90 ;
   color: #fff;
 }
 #menu-hmbtn{
@@ -254,7 +256,7 @@ background-position: center;
 text-align: center;
 margin-bottom: 20px;
 font-size: 3rem;
-color: #e4c29f;
+color: #ffffff;
 }
 
 .login-container h5 {
@@ -389,9 +391,9 @@ margin-bottom: 5px;
 }
 
 .hero .home-content{ 
-  width: 60rem;
+  width: 50rem;
   z-index: 1;
-  text-align: center;
+  text-align: left;
   margin-top: 100px;
   margin-bottom: 90px;
   margin-right: 800px;
@@ -399,8 +401,8 @@ margin-bottom: 5px;
 }
 
 .hero .home-content h1{
-  color: #221403;
-  font-size: 3rem;
+  color: #ffffff;
+  font-size: 3rem; 
 
 }
 .hero .home-content h2{
@@ -443,10 +445,11 @@ margin-bottom: 5px;
 }
 
 .welcome-section h2 {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #A97E53;
   font-family: 'Cursive', Arial, sans-serif;
   margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
 }
 
 .welcome-section p {
@@ -465,16 +468,48 @@ margin-bottom: 5px;
 }
 
 .arrow-down {
-  font-size: 2rem; /* Size of the arrow */
-  color: #4a4a4a; /* Color of the arrow */
+  font-size: 3rem;
+  color: #A97E53;
   text-decoration: none;
-  transition: transform 0.3s;
+  transition: transform 0.3s, color 0.3s;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .arrow-down:hover {
-  transform: translateY(5px); /* Slight downward movement on hover */
+  transform: translateY(5px);
+  color: #6B7552;
 }
-/* Updated CSS with consistent styling for your revised HTML */
+
+.arrow-container a {
+  margin: 0 10px;
+  font-family: 'Arial', sans-serif;
+  display: inline-block;
+}
+
+.arrow-container a:first-child {
+  animation: bounce 1s infinite alternate;
+}
+
+.arrow-container a:nth-child(2) {
+  animation: bounce 1.2s infinite alternate;
+}
+
+.arrow-container a:nth-child(3) {
+  animation: bounce 1.4s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .menu-cards {
   display: flex;
@@ -483,7 +518,7 @@ margin-bottom: 5px;
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
-  padding-bottom: 150px;
+  padding-bottom: 40px;
 }
 
 .menu-card {
@@ -498,14 +533,27 @@ margin-bottom: 5px;
   transition: transform 0.3s;
 }
 
+/* Set colors for each specific card */
+.menu-cards .menu-card:nth-child(1) {
+  background-color: #CEAF90; /* First card */
+}
+
+.menu-cards .menu-card:nth-child(2) {
+  background-color: #6B7552; /* Second card */
+}
+
+.menu-cards .menu-card:nth-child(3) {
+  background-color: #6C4D38; /* Third card */
+}
+
 .menu-card:hover {
   transform: translateY(-10px);
 }
 
 /* Image style */
 .card-image {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   overflow: hidden;
   border-radius: 50%;
   margin-bottom: 15px;
@@ -560,7 +608,7 @@ margin-bottom: 5px;
 
 .Trending-box {
   padding: 2rem;
-  background-color: #fff;
+  background-color: #ffffffc5;
 }
 
 .Trending .first-section {
@@ -638,6 +686,22 @@ margin-bottom: 5px;
   background-image: url('bakebrew.jpg'); 
   background-size: cover;
   background-position: center;
+}
+
+.content-main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.content-main > * {
+  position: relative;
+  z-index: 2; 
 }
 
 
@@ -985,8 +1049,8 @@ form textarea::placeholder{
 }
 
 .footer {
-  background-color: #a98467;
-  color: var(--text-dark); 
+  background-color: #6B7552;
+  color: white; 
   padding: 20px 0;
   font-family: 'Poppins', sans-serif;
   text-align: center;
