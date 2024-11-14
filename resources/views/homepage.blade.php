@@ -26,12 +26,12 @@
             It's all we’ve ever focused on. Now, with our Catering Services, you can bring us with you for the comfort of your own home. 
             Join us on this flavorful journey, and let’s do it together!
         </p>
-        <!--<div class="arrow-container">
+        <div class="arrow-container">
 
             <a href="#home-heading" class="arrow-down">&#8595;</a> 
             <a href="#home-heading" class="arrow-down">&#8595;</a>
             <a href="#home-heading" class="arrow-down">&#8595;</a>
-        </div>-->
+        </div>
         </div>
 
         <section class="home-heading">
