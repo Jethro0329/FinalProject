@@ -15,12 +15,19 @@
 
         <div class="welcome-section">
         <h2>Welcome</h2>
+
+        <p>Whether you’re here for a morning pick-me-up, a quiet place to work, or an afternoon catch-up with friends,
+             Bake & Brew Co. offers a warm atmosphere and a menu that celebrates the art of baking and brewing.
+              From creamy lattes to rich espresso shots, buttery croissants to decadent cakes, each item is made with care to provide comfort and delight.</p>
+        <div class="arrow-container">
+
         <p>
             Great coffee, mouth-watering food, excellent service, and a smile. 
             It's all we’ve ever focused on. Now, with our Catering Services, you can bring us with you for the comfort of your own home. 
             Join us on this flavorful journey, and let’s do it together!
         </p>
         <!--<div class="arrow-container">
+
             <a href="#home-heading" class="arrow-down">&#8595;</a> 
             <a href="#home-heading" class="arrow-down">&#8595;</a>
             <a href="#home-heading" class="arrow-down">&#8595;</a>
