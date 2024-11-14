@@ -49,7 +49,6 @@
         @yield('content') <!--call the webpages to display its content-->
     </main>
 
-    <!-- Add your footer here if needed -->
     @if(!isset($hideNavAndFooter) || !$hideNavAndFooter)
     <footer>
         <section class="footer">

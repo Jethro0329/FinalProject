@@ -40,7 +40,7 @@
     <div class="menu-cards">
         <div class="menu-card">
             <div class="card-image">
-                <img src="{{ asset('css/img13.jpg') }}" alt="Morning Delights & Snack Staples">
+                <img src="{{ asset('css/img13.jpg') }}" alt="Breakfast Classic">
             </div>
             <h3>Sunrise Specials</h3>
             <p> 
