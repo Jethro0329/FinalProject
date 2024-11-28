@@ -6,6 +6,7 @@ use App\Http\Middleware\CheckAge;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\MenuController;
 
 // Group routes that use the 'web' middleware and log requests
 Route::middleware(['web', LogRequests::class])->group(function () {
@@ -74,4 +75,4 @@ Route::get('/homepage/{username}', [HomeController::class, 'index'])->name('home
 // Dashboard routes with dynamic username
 Route::get('/menu/{username}', [DashboardController::class, 'index'])->name('menu');
 
-
+Route::get('/menu/{username}', [MenuController::class, 'showMenu'])->name('menu');
