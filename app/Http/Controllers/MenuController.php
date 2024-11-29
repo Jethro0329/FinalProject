@@ -51,7 +51,7 @@ class MenuController extends Controller
 
         // Limit to 6 items using a for loop
         $limitedItems = [];
-        for ($i = 0; $i < min(count($menuItems), 3); $i++) {
+        for ($i = 0; $i < min(count($menuItems), 6); $i++) {
             $limitedItems[] = $menuItems[$i];
         }
 
