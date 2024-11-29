@@ -22,6 +22,10 @@ body {
   color: #333;
   background-color: #ac9d69;
   box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+  display: flex;
+ flex-direction: column;
+    min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+    margin: 0; /* Remove default margin */
 }
 
 
@@ -598,17 +602,19 @@ margin-bottom: 5px;
 /* Product css style */
 .Trending {
   padding: 2rem 9%;
+ 
 }
 
 .Trending .heading span {
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #914F1E;
 }
 
 .Trending-box {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #ffffffc5;
+  margin-bottom: 20px;
 }
 
 .Trending .first-section {
@@ -1054,6 +1060,7 @@ form textarea::placeholder{
   padding: 20px 0;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  margin-top: 100px;
 }
 
 .footer__container {
@@ -1122,8 +1129,9 @@ form textarea::placeholder{
 
 .footer__bottom {
   text-align: center;
-  padding: 1rem;
-  border-top: 1px solid #e5e7eb;
+  padding: 1px;
+  border-top: 1px solid #e5e7eb;    
+
 }
 
 .footer p {

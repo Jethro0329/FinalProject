@@ -29,28 +29,29 @@ class MenuController extends Controller
                 'rating' => 4,
             ],
             [
-                'image' => 'css/img4.jpg',
+                'image' => 'css/latte.jpg',
                 'name' => 'Chai Latte',
                 'price' => '₱120',
                 'rating' => 5,
             ],
             [
-                'image' => 'css/img5.jpg',
+                'image' => 'css/Chicken-salad-croissant.jpg',
                 'name' => 'Chicken Salad Croissant',
                 'price' => '₱350',
                 'rating' => 4,
             ],
             [
-                'image' => 'css/img6.jpg',
+                'image' => 'css/espresso.jpg',
                 'name' => 'Espresso',
                 'price' => '₱110',
                 'rating' => 4,
             ],
+           
         ];
 
         // Limit to 6 items using a for loop
         $limitedItems = [];
-        for ($i = 0; $i < min(count($menuItems), 6); $i++) {
+        for ($i = 0; $i < min(count($menuItems), 3); $i++) {
             $limitedItems[] = $menuItems[$i];
         }
 
