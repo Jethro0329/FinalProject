@@ -11,16 +11,33 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // Create the 'users' table if it doesn't already exist
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
         });
 
+        // Add the 'birthday' column to the 'users' table
+        Schema::table('users', function (Blueprint $table) {
+            $table->date('birthday'); // Add birthday field
+        });
+
+        // Remove unnecessary columns if they exist
+        Schema::table('users', function (Blueprint $table) {
+            // Remove email, email_verified_at, and password columns
+            if (Schema::hasColumn('users', 'email')) {
+                $table->dropColumn('email');
+            }
+            if (Schema::hasColumn('users', 'email_verified_at')) {
+                $table->dropColumn('email_verified_at');
+            }
+            if (Schema::hasColumn('users', 'password')) {
+                $table->dropColumn('password');
+            }
+        });
+
+        // Create additional tables (password_reset_tokens, sessions) if needed
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
             $table->string('token');
@@ -42,7 +59,10 @@ return new class extends Migration
      */
     public function down(): void
     {
+        // Drop the 'users' table
         Schema::dropIfExists('users');
+        
+        // Drop the additional tables if they exist
         Schema::dropIfExists('password_reset_tokens');
         Schema::dropIfExists('sessions');
     }

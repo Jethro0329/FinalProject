@@ -4,9 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\LogRequests;
 use App\Http\Middleware\CheckAge;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\LoginController;
 
 // Group routes that use the 'web' middleware and log requests
 Route::middleware(['web', LogRequests::class])->group(function () {
@@ -72,7 +72,8 @@ Route::middleware(['web', LogRequests::class])->group(function () {
 // Home page route with dynamic username
 Route::get('/homepage/{username}', [HomeController::class, 'index'])->name('homepage');
 
-// Dashboard routes with dynamic username
-Route::get('/menu/{username}', [DashboardController::class, 'index'])->name('menu');
-
 Route::get('/menu/{username}', [MenuController::class, 'showMenu'])->name('menu');
+
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+
+Route::get('/homepage/{username}', [HomeController::class, 'index'])->name('homepage');
