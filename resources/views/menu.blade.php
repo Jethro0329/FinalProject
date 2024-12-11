@@ -11,9 +11,9 @@
             <div class="first-section">
                 @foreach ($menuItems as $item)
                     <div class="firstsection-box">
-                        <img src="{{ asset($item['image']) }}" alt="{{ $item['name'] }}">
-                        <h3>{{ $item['name'] }}</h3>
-                        <div class="price">{{ $item['price'] }}</div>
+                        <img src="{{ asset($item->image) }}" alt="{{ $item->name }}">
+                        <h3>{{ $item->name }}</h3>
+                        <div class="price">{{ $item->price }}</div>
                         <a href="#" class="check-btn">Buy</a>
                     </div>
                 @endforeach

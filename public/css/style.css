@@ -23,10 +23,11 @@ body {
   background-color: #ac9d69;
   box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
   display: flex;
- flex-direction: column;
-    min-height: 100vh; /* Ensure the body is at least the height of the viewport */
-    margin: 0; /* Remove default margin */
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+  margin: 0;
 }
+
 
 
 /* Header Styles */
@@ -688,11 +689,14 @@ margin-bottom: 5px;
 
 .content-main {
   position: relative;
-  height: 130vh;
+  min-height: calc(100vh - 100px); /* Subtract the footer height (if fixed height) */
   background-image: url('bakebrew.jpg'); 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
 }
+
 
 .content-main::before {
   content: '';
@@ -1060,8 +1064,8 @@ form textarea::placeholder{
   padding: 20px 0;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  margin-top: 100px;
 }
+
 
 .footer__container {
   display: flex;

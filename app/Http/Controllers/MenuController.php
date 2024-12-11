@@ -3,60 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\MenuItem;
 
 class MenuController extends Controller
 {
     public function showMenu($username)
     {
-        // Simulate data from a database
-        $menuItems = [
-            [
-                'image' => 'css/bfast.jpg',
-                'name' => 'Classic Croissants',
-                'price' => '₱150',
-                'rating' => 4,
-            ],
-            [
-                'image' => 'css/img2.jpg',
-                'name' => 'Lavander Latte',
-                'price' => '₱120',
-                'rating' => 4,
-            ],
-            [
-                'image' => 'css/img3.jpg',
-                'name' => 'Banana Walnut Muffin',
-                'price' => '₱100',
-                'rating' => 4,
-            ],
-            [
-                'image' => 'css/latte.jpg',
-                'name' => 'Chai Latte',
-                'price' => '₱120',
-                'rating' => 5,
-            ],
-            [
-                'image' => 'css/Chicken-salad-croissant.jpg',
-                'name' => 'Chicken Salad Croissant',
-                'price' => '₱350',
-                'rating' => 4,
-            ],
-            [
-                'image' => 'css/espresso.jpg',
-                'name' => 'Espresso',
-                'price' => '₱110',
-                'rating' => 4,
-            ],
-           
-        ];
-
-        // Limit to 6 items using a for loop
-        $limitedItems = [];
-        for ($i = 0; $i < min(count($menuItems), 6); $i++) {
-            $limitedItems[] = $menuItems[$i];
-        }
+        // Fetch the first 6 menu items from the database
+        $menuItems = MenuItem::take(6)->get();
 
         return view('menu', [
-            'menuItems' => $limitedItems, 
+            'menuItems' => $menuItems, 
             'username' => $username
         ]);
     }

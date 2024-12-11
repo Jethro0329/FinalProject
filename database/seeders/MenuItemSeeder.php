@@ -15,7 +15,7 @@ class MenuItemSeeder extends Seeder
     {
         MenuItem::create([
             'image' => 'css/bfast.jpg',
-            'name' => 'Classic Croissants',
+            'name' => 'Classic Droissants',
             'price' => '₱150',
             'rating' => 4,
         ]);
