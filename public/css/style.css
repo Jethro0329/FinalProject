@@ -243,7 +243,6 @@ body {
   color: #483C32;
 }
 
-/*LOG IN STYLES*/
 /* Main container */
 .login-main {
   display: flex;
@@ -267,7 +266,7 @@ body {
 
 .login-container {
   position: relative;
-  z-index: 2; /* Places the form above the overlay */
+  z-index: 2;
   background: #fff;
   padding: 3rem;
   border-radius: 8px;
@@ -275,16 +274,18 @@ body {
   text-align: center;
   max-width: 400px;
   width: 100%;
-  font-size: small;
+  font-size: 1rem;
 }
 
 .login-container h1 {
-  text-align: left;
+  text-align: center;
+  font-size: 2.2rem;
 }
 
 .login-container p {
-  text-align: left;
+  text-align: center;
   padding-bottom: 30px;
+  font-size: 1.2rem;
 }
 
 .background-blur {
@@ -297,151 +298,103 @@ body {
   background-color: rgba(0, 0, 0, 1);
   background-size: cover;
   background-position: center;
-  }
+}
 
-/* Brand and Headers */
 .brand-name {
-    color: #e84c3d;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+  color: #e84c3d;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .logo-container .logo {
-  width: 100px; /* Adjust size of the logo */
+  width: 100px;
 }
 
 .logo-container h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: #333;
   margin: 0;
 }
 
-.create-account a {
-    color: #0073ea;
-    text-decoration: none;
-}
-
-.create-account a:hover {
-    text-decoration: underline;
-}
-
-/* Form Input Styles */
 .input-group {
-    margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .input-group input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s;
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  outline: none;
+  transition: border-color 0.3s;
 }
 
 .input-group input:focus {
-    border-color: #0073ea;
+  border-color: #CEAF90;
 }
 
-/* Remember Me Checkbox */
 .remember-me {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-    color: #555;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+  font-size: 1rem;
+  color: #555;
 }
 
-/* Button Styles */
 .login-button {
-    width: 100%;
-    background: #0073ea;
-    color: #fff;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 2px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+  width: 100%;
+  background: #CEAF90;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .login-button:hover {
-    background: #005bb5;
+  background: #8e7863;
 }
 
-/* Divider */
-.divider {
-    margin: 1.5rem 0;
-    font-size: 0.9rem;
-    color: #999;
-    position: relative;
-}
-
-.divider span {
-    background: #fff;
-    padding: 0 0.5rem;
-}
-
-.divider::before,
-.divider::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 40%;
-    height: 1px;
-    background: #ddd;
-}
-
-.divider::before {
-    left: 0;
-}
-
-.divider::after {
-    right: 0;
-}
-
-/* Social Login Buttons */
 .social-login {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
 }
 
 .social-login button {
-    flex: 1;
-    padding: 0.6rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #CEAF90;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.google-button { background: #f8f9fa; }
-.facebook-button { background: #eef9ff; }
-.instagram-button { background: #f4f4f4; }
+.google-button { background: #73755240; }
+.facebook-button { background: #525d7540; }
+.instagram-button { background: #75527440; }
 
 .social-login button:hover {
-    background: #e6e6e6;
+  background: #e6e6e6;
 }
 
 .input-group {
   text-align: left;
 }
 
-/* Error Message */
 .error-message {
-    color: red;
-    font-size: 0.85rem;
-    margin-top: 0.3rem;
+  color: red;
+  font-size: 1rem;
+  margin-top: 0.3rem;
 }
 
-
-/* Birthday Input */
 .input-group input[type="date"] {
   appearance: none;
   -webkit-appearance: none;
