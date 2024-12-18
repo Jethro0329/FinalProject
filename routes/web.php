@@ -67,6 +67,12 @@ Route::middleware(['web', LogRequests::class])->group(function () {
         return view('goTologin', ['username' => 'YourUsernameHere'])->with('hideNavAndFooter', true);
     });
 
+    // Route for the profile page with dynamic username
+    Route::get('/profile/{username}', function ($username) {
+        return view('profile', ['username' => $username]);
+    })->name('profile');
+
+
 });
 
 // Home page route with dynamic username

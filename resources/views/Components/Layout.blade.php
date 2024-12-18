@@ -24,7 +24,7 @@
                 <div class="fa-solid fa-bars" id="menu-hmbtn"></div>
                 <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
                 <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
-                <div class="fa-solid fa-user"></div>
+                <a href="{{ route('profile', ['username' => $username]) }}" class="fa-solid fa-user"></a>
             </div>
 
             <form action="" class="search-form">

@@ -1,39 +1,38 @@
-<!-- resources/views/aboutus.blade.php -->
 @extends('Components.Layout')
 
-@section('title', 'About Us')
+@section('title', 'Home Page')
 
-@section('content')
-    <main class="about-main">
-        <section class="intro-section">
-            <h1></h1>
-        </section>
+@section('content') 
+    <section class="hero1">
+        <div class="home-content">
+        <h1>About Our Shop</h1>
+        <h2>We are a passionate team dedicated to providing the best products and service to our customers. Our shop is built on trust, quality, and commitment to customer satisfaction. 
+            <p> <span>Meet the people who make it all happen:</span></h2></p>
+        </div>
+    </section>
 
-        <section class="about-section">
-            <div class="about-content">
-                <div class="text-container">
-                    <h2></h2>
-                    <p>
-                        
-                    </p>
-                </div>
-            </div>
+    <div class="about-shop">
+        <h2>Meet the Team</h2>
+        <p>We are a group of BSIT-3C students working on this exciting project, combining our passion for technology, design, and customer service. Our goal is to create a unique and enjoyable experience for our customers through this shop, built on trust, quality, and dedication. Each team member brings their own expertise to the table, and together we’re making it all happen!</p>
+    </div>
 
-            <div class="about-content">
-                <div class="text-container">
-                    <h2></h2>
-                    <p>
-                        
-                    </p>
-                </div> 
-            </div> 
+    <div class="team">
+        <div class="card">
+        <img src="person2.jpg" alt="Person 2">
+            <h3>Person</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+        <div class="card">
+        <img src="{{ asset('css/jet.jpg') }}" alt="Jethro J. Manzanillo">
+            <h3>Jethro J. Manzanillo</h3>
+            <p>UI Designer / Front-End Developer.</p>
+            
+        </div>
+        <div class="card">
+            <img src="person3.jpg" alt="Person 3">
+            <h3>Person</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+    </div>
 
-            <div class="about-content">
-                <div class="text-container">
-                    <h2></h2>
-                    
-                </div>
-            </div>
-        </section>
-    </main>
 @endsection
