@@ -25,13 +25,13 @@
         <div class="card">
             <img src="{{ asset('css/jet.jpg') }}" alt="Jethro J. Manzanillo">
             <h3>Jethro J. Manzanillo</h3>
-            <p>UI Designer / Front-End Developer.</p>
+            <p>UI Designer / Front-End Developer</p>
             
         </div>
         <div class="card">
-            <img src="{{ asset('css/.jpg') }}" alt="Jella Marie B. Caceres">
+        <img src="{{ asset('css/jella.jpg') }}" alt="Jella Marie B. Caceres">
             <h3>Jella Marie B. Caceres</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p>UI Designer / Front-End Developer</p>
         </div>
     </div>
 

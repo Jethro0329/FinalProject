@@ -9,7 +9,7 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #106162;
     background-color: #f7f7f7;
   }
   
@@ -63,20 +63,6 @@
 }
   
   /* Main Styles */
-  
-  .site-main {
-    position: relative;
-    height: 25; 
-    background-image: url('RobielMenu.jpg'); /* Replace with your background image */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;     
-    height: 100vh;          
-    text-align: center;
-  }
 
 
   form {
@@ -99,7 +85,7 @@ form textarea{
     border: none;
     outline: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: rgb(134, 43, 43);
     color: black;
     margin-bottom: 20px;
     border-radius: 8px;

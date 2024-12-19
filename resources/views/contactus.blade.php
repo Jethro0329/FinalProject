@@ -32,7 +32,7 @@
         </div>
         <div class="contact-info-card">
             <h3>🏠 Our Shop</h3>
-            <p>2443 Oak Ridge Omaha, QA 45056</p>
+            <p>Gregorian Street, Legazpi Albay</p>
         </div>
     </section>
 
