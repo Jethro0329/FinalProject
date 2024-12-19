@@ -18,19 +18,19 @@
 
     <div class="team">
         <div class="card">
-        <img src="person2.jpg" alt="Person 2">
-            <h3>Person</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <img src="{{ asset('css/jeth.jpg') }}" alt="Jethro Owen P. Acuña">
+            <h3>Jethro Owen P. Acuña</h3>
+            <p>Back-End Developer</p>
         </div>
         <div class="card">
-        <img src="{{ asset('css/jet.jpg') }}" alt="Jethro J. Manzanillo">
+            <img src="{{ asset('css/jet.jpg') }}" alt="Jethro J. Manzanillo">
             <h3>Jethro J. Manzanillo</h3>
             <p>UI Designer / Front-End Developer.</p>
             
         </div>
         <div class="card">
-            <img src="person3.jpg" alt="Person 3">
-            <h3>Person</h3>
+            <img src="{{ asset('css/.jpg') }}" alt="Jella Marie B. Caceres">
+            <h3>Jella Marie B. Caceres</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
         </div>
     </div>
